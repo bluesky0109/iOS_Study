@@ -13,6 +13,7 @@
 		33DEFF421C376BBD002F4114 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33DEFF401C376BBD002F4114 /* Main.storyboard */; };
 		33DEFF441C376BBD002F4114 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33DEFF431C376BBD002F4114 /* Assets.xcassets */; };
 		33DEFF471C376BBD002F4114 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33DEFF451C376BBD002F4114 /* LaunchScreen.storyboard */; };
+		52794C2F0C08CF7542F87857 /* libPods-Method Swizzling.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 847AD2C9D50A29892233F729 /* libPods-Method Swizzling.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		33DEFF431C376BBD002F4114 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33DEFF461C376BBD002F4114 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33DEFF481C376BBD002F4114 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		636F5B56B7CFF8EA6E6B8461 /* Pods-Method Swizzling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Method Swizzling.release.xcconfig"; path = "Pods/Target Support Files/Pods-Method Swizzling/Pods-Method Swizzling.release.xcconfig"; sourceTree = "<group>"; };
+		847AD2C9D50A29892233F729 /* libPods-Method Swizzling.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Method Swizzling.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA843FDCCF122B4A01E57625 /* Pods-Method Swizzling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Method Swizzling.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Method Swizzling/Pods-Method Swizzling.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52794C2F0C08CF7542F87857 /* libPods-Method Swizzling.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				33DEFF361C376BBD002F4114 /* Method Swizzling */,
 				33DEFF351C376BBD002F4114 /* Products */,
+				7871C3D068C7A62344A3D154 /* Pods */,
+				6DD2772E143B57FEAEBB0905 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6DD2772E143B57FEAEBB0905 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				847AD2C9D50A29892233F729 /* libPods-Method Swizzling.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7871C3D068C7A62344A3D154 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA843FDCCF122B4A01E57625 /* Pods-Method Swizzling.debug.xcconfig */,
+				636F5B56B7CFF8EA6E6B8461 /* Pods-Method Swizzling.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33DEFF4B1C376BBD002F4114 /* Build configuration list for PBXNativeTarget "Method Swizzling" */;
 			buildPhases = (
+				91F68074429054906A12AB7F /* Check Pods Manifest.lock */,
 				33DEFF301C376BBD002F4114 /* Sources */,
 				33DEFF311C376BBD002F4114 /* Frameworks */,
 				33DEFF321C376BBD002F4114 /* Resources */,
+				8D57ABC48296B53F68EAB342 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +170,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D57ABC48296B53F68EAB342 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Method Swizzling/Pods-Method Swizzling-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91F68074429054906A12AB7F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		33DEFF301C376BBD002F4114 /* Sources */ = {
@@ -260,6 +319,7 @@
 		};
 		33DEFF4C1C376BBD002F4114 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA843FDCCF122B4A01E57625 /* Pods-Method Swizzling.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Method Swizzling/Info.plist";
@@ -271,6 +331,7 @@
 		};
 		33DEFF4D1C376BBD002F4114 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 636F5B56B7CFF8EA6E6B8461 /* Pods-Method Swizzling.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Method Swizzling/Info.plist";
@@ -299,6 +360,7 @@
 				33DEFF4D1C376BBD002F4114 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
